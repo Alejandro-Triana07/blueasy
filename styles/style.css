@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: #fff;
+  background-color: #111;
+}
+
+.encabezado {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background: rgba(15, 25, 35, 0.75);
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+.logo {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.texto-azul {
+  color: #37a7ff;
+}
+
+.navegacion .menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navegacion .menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.navegacion .menu li a:hover,
+.navegacion .menu li a.activo {
+  border: 2px solid #37a7ff;
+  color: #37a7ff;
+}
+
+.seccion-principal {
+  background-image: url("../assets/images/Fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-frases {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.frase {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px 25px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.frase1{
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 12px 10px;
+  align-self: center;
+  width: 70%;
+  font-family: sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #fff;
+}
